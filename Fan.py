@@ -7,8 +7,8 @@ class Fan:
         self.__color = color
         self.__on = on
 
-#create setters
-#create set speed
+    #create setters
+    #create set speed
     def set_speed(self):
             self.__speed = int(input('Enter fan speed: '))
             if self.__speed == 1:
@@ -18,16 +18,21 @@ class Fan:
             elif self.__speed == 3:
                 self.__speed = 'Fast'
 
-#create set radius
+    #create set radius
     def set_radius(self):
         self.__radius = float(input('Enter fan radius: '))
 
-#create set color
+    #create set color
     def set_color(self):
         self.__color = str(input('Enter fan color: '))
 
 #create set power
-
+    def set_power(self):
+        self.__on = input('Enter fan power:  ')
+        if self.__on == '0':
+            self.__on = 'Off'
+        elif self.__on == '1':
+            self.__on = 'On'
 
 #create getters methods
 
