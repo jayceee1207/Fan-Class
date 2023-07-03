@@ -26,20 +26,27 @@ class Fan:
     def set_color(self):
         self.__color = str(input('Enter fan color: '))
 
-#create set power
+    #create set power
     def set_power(self):
         self.__on = input('Enter fan power:  ')
         if self.__on == '0':
-            self.__on = 'Off'
+            self.__on = 'The fan is off'
         elif self.__on == '1':
-            self.__on = 'On'
+            self.__on = 'The fan is on'
 
-#create getters methods
+    #create getters methods
+    #create get speed
+    def get_speed(self):
+        return self.__speed
+    
+    #create get radius
+    def get_radius(self):
+        return self.__radius
 
-#create get speed
+    #create get color
+    def get_color(self):
+        return self.__color
 
-#create get radius
-
-#create get color
-
-#create get power
+    #create get power
+    def get_on(self):
+        return self.__on
