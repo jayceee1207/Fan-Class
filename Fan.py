@@ -1,6 +1,11 @@
 #create a class Fan
-
+class Fan:
 #create constructor (default values)
+    def __init__(self,speed = 'SLOW', radius = 5, color = 'blue', on = 0):
+        self.__speed = speed
+        self.__radius = radius
+        self.__color = color
+        self.__on = on
 
 #create setters
 
